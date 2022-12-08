@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">balcalcjava</string>
+    <string name="vind">Введіть швидкість вітру у м/с.</string>
+    <string name="height">Введіть висоту у м.</string>
+    <string name="calculate">Порахувати зміщення</string>
+    <string name="result">______м.</string>
+
+</resources>

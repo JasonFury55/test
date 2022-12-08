@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/vindspeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/abhaya_libre_extrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/vind"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_vindspeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:layout_below="@+id/vindspeed"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_vindspeed"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/abhaya_libre_extrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/height"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextFields" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/input_height"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/mygreen"
+
+        android:fontFamily="@font/abhaya_libre_extrabold"
+        android:text="@string/calculate"
+        android:textSize="20sp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/abhaya_libre_extrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
